@@ -50,7 +50,7 @@ export async function InitCache(prisma: PrismaClient) {
     const posts = await prisma.post.findMany()
 
     posts.sort((a, b) => {
-        const timeComparison = a.date.getTime() - b.date.getTime();
+        const timeComparison = b.date.getTime() - a.date.getTime();
 
         if (timeComparison === 0) {
             return a.title.localeCompare(b.title)

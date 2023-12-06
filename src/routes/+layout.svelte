@@ -3,6 +3,10 @@
   import "./styles/main.scss";
 </script>
 
+<nav>
+  <a href="/">Home</a>
+</nav>
+
 <ThemeToggle />
 
 <div>

@@ -1,5 +1,6 @@
 :root {
   --html: #444a63;
+  --font: #fff;
 
   // ThemeToggle
   --theme-toggle-border: #a6a6a6;
@@ -11,4 +12,5 @@
 
 [data-theme="light"] {
   --html: #e0e0f0;
+  --font: #000;
 }

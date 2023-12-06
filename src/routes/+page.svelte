@@ -13,5 +13,6 @@
     <p>{post.date}</p>
     <p>{post.postSnippet}</p>
     <!-- <p>{@html post.markdown}</p> -->
+    <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
   </div>
 {/each}
