@@ -1,0 +1,14 @@
+:root {
+  --html: #444a63;
+
+  // ThemeToggle
+  --theme-toggle-border: #a6a6a6;
+  --theme-toggle-background: #121212;
+  --theme-toggle-color-hover: #e6e6e6;
+  --theme-toggle-border-hover: #e6e6e6;
+  --theme-toggle-check-background: #383838;
+}
+
+[data-theme="light"] {
+  --html: #e0e0f0;
+}
