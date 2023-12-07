@@ -10,7 +10,7 @@ type CachePost = {
 
 let cache: CachePost;
 
-const shi = await getHighlighter({ theme: "dracula-soft" })
+const shi = await getHighlighter({ theme: "material-theme-palenight" })
 
 
 const marked = new Marked(
@@ -38,7 +38,7 @@ const marked = new Marked(
     {
         renderer: {
             code(code, lang, escaped) {
-                return `<div class="hello"><span>Some stuff here</span><pre><code class="language-${lang}">${escaped ? code : code}</code></pre></div>`;
+                return `<div class="code-block"><p class="code-block-header"><span class="language-name">${lang}</span></p><pre><code class="language-${lang}">${escaped ? code : code}</code></pre></div>`;
             },
         }
     }

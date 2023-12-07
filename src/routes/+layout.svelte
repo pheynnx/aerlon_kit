@@ -1,16 +1,9 @@
 <script lang="ts">
-  import ThemeToggle from "$lib/components/ThemeToggle.svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
+
   import "./styles/main.scss";
 </script>
 
-<nav>
-  <a href="/">Home</a>
-</nav>
-
-<ThemeToggle />
-
-<div>
-  <h2>Top Level</h2>
-</div>
+<Navbar />
 
 <slot />

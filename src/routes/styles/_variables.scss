@@ -1,16 +1,28 @@
 :root {
-  --html: #444a63;
+  --html-gradient: linear-gradient(45deg, #2f2f3d, #232536);
   --font: #fff;
 
   // ThemeToggle
   --theme-toggle-border: #a6a6a6;
-  --theme-toggle-background: #121212;
-  --theme-toggle-color-hover: #e6e6e6;
-  --theme-toggle-border-hover: #e6e6e6;
+  --theme-toggle-background: #161414;
+  --theme-toggle-color-hover: #f78c6c;
+  --theme-toggle-border-hover: #f78c6c;
   --theme-toggle-check-background: #383838;
+
+  // Navbar
+  --navbar: #13131a;
 }
 
 [data-theme="light"] {
-  --html: #e0e0f0;
+  --html-gradient: linear-gradient(45deg, #e0e0f0, #c8cdff);
   --font: #000;
+
+  // ThemeToggle
+  --theme-toggle-border: #a6a6a6;
+  --theme-toggle-background: #383434;
+  --theme-toggle-color-hover: #f78c6c;
+  --theme-toggle-check-background: #fdfdfd;
+
+  // Navbar
+  --navbar: #d9d9f7;
 }
