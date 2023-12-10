@@ -41,8 +41,8 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 50px;
-    border-bottom: 1px solid #f78c6c;
+    height: 55px;
+    // border-bottom: 1px solid #f78c6c;
     margin-bottom: 20px;
     background-color: var(--navbar);
     // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 4px;

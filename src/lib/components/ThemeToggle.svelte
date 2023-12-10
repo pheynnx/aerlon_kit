@@ -75,7 +75,7 @@
 
   .check {
     position: absolute;
-    top: 1px;
+    top: 1.2px;
     left: 1px;
     width: 18px;
     height: 18px;

@@ -1,4 +1,5 @@
 :root {
+  --html: #0e1116;
   --html-gradient: linear-gradient(45deg, #2f2f3d, #232536);
   --font: #fff;
 
@@ -10,10 +11,11 @@
   --theme-toggle-check-background: #383838;
 
   // Navbar
-  --navbar: #13131a;
+  --navbar: #171b21;
 }
 
 [data-theme="light"] {
+  --html: #ffffff;
   --html-gradient: linear-gradient(45deg, #e0e0f0, #c8cdff);
   --font: #000;
 
@@ -24,5 +26,5 @@
   --theme-toggle-check-background: #fdfdfd;
 
   // Navbar
-  --navbar: #d9d9f7;
+  --navbar: #f0f0ff;
 }
