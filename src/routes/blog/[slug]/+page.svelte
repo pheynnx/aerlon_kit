@@ -43,12 +43,12 @@
   }
 
   .blog-category {
-    color: #fff;
+    color: var(--catefory-font);
     text-decoration: none;
     margin: 0;
     border-radius: 0.25rem;
-    background-color: #5e8cff;
-    // border: 1px solid #f78c6c;
+    background-color: var(--category);
+    font-weight: 600;
     font-size: 12px;
     line-height: 1;
     padding: 4px 7px 5px 7px;

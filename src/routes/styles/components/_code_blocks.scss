@@ -1,48 +1,39 @@
 .code-block {
-}
-
-.code-block-header {
-  height: 30px;
-  display: flex;
-  margin: 0;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  background-color: #2e2e2e;
-  border: 1px solid #5e8cff;
+  position: relative;
+  // margin: 16px -24px;
+  background-color: #161618;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
 }
 
 .language-name {
-  color: #fff;
-  line-height: 1;
-  align-self: center;
-  margin-left: 10px;
-  font-size: 13px;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  z-index: 2;
+  font-size: 12px;
   font-weight: 500;
+  color: #6a737d;
+  line-height: 1;
+  font-size: 13px;
+  font-weight: 700;
   &::first-letter {
-    text-transform: uppercase;
+    text-transform: lowercase;
   }
 }
 
 pre {
-  margin-top: 0;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  border: 1px solid #7e7b79;
-  border-top: none;
-  background-color: #242424;
-  margin-left: auto;
-  margin-right: auto;
-  // word-wrap: break-word;
-  // white-space: pre-wrap;
+  padding: 20px 0;
+  margin: 0;
   overflow: auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 code {
   font-family: "Quicksand";
   font-size: 14px;
   font-weight: 500;
-  padding: 3px 5px;
+  // padding: 0px 24px;
   background-color: #5e8cff;
   color: #000;
   border-radius: 0.25rem;
@@ -57,11 +48,12 @@ code {
 pre code {
   display: block;
   letter-spacing: 0.07rem;
-  padding: 0.75em 0.75em;
+  padding: 0px 24px;
   line-height: 1.5;
   color: #fff;
   background-color: transparent;
 }
+
 /* PreWrapper */
 .chroma {
   color: #fff;

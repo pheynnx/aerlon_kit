@@ -38,7 +38,7 @@ const marked = new Marked(
     {
         renderer: {
             code(code, lang, escaped) {
-                return `<div class="code-block"><p class="code-block-header"><span class="language-name">${lang}</span></p><pre><code class="language-${lang}">${escaped ? code : code}</code></pre></div>`;
+                return `<div class="code-block"><span class="language-name">${lang}</span><pre><code class="language-${lang}">${escaped ? code : code}</code></pre></div>`;
             },
         }
     }

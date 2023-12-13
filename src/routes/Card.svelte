@@ -45,7 +45,7 @@
       // border: 1px solid #5e8cff;
 
       .card-header-title:hover {
-        color: #e45d34;
+        color: #42b883;
       }
 
       .card-header-date {
@@ -53,8 +53,9 @@
       }
 
       .card-category {
-        background-color: #e45d34;
-        border: 1px solid transparent;
+        color: var(--category-featured-font);
+        background-color: var(--category-featured);
+        border: 1px solid var(--category-featured-border);
       }
     }
   }
@@ -74,7 +75,7 @@
     padding-bottom: 2px;
 
     &:hover {
-      color: #5e8cff;
+      color: #42b883;
     }
   }
 
@@ -84,7 +85,7 @@
   }
 
   .card-snippet {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0;
     padding: 0 2px;
     line-height: 1.4;
@@ -104,15 +105,14 @@
   }
 
   .card-category {
-    color: #fff;
+    color: var(--catefory-font);
     text-decoration: none;
     margin: 0;
     border-radius: 0.25rem;
-    background-color: #26448d;
-    border: 1px solid #5e8cff;
-    font-size: 12px;
+    background-color: var(--category);
+    font-weight: 600;
+    font-size: 13px;
     line-height: 1;
     padding: 4px 7px 5px 7px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 </style>

@@ -42,6 +42,7 @@
 
 <style lang="scss">
   .navigation-container {
+    z-index: 5;
     position: sticky;
     top: 0px;
     height: 55px;
@@ -50,7 +51,7 @@
 
     &.scrolled {
       background-color: var(--navbar);
-      border-bottom: 1px solid #f78c6c;
+      border-bottom: 1px solid var(--navbar-border);
     }
   }
 
@@ -61,7 +62,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    max-width: 43rem;
+    // max-width: 43rem;
     padding: 0 1rem;
     margin: 0 auto;
   }
@@ -75,11 +76,11 @@
     height: 30px;
 
     .upper {
-      fill: #5e8cff;
+      fill: #42b883;
     }
 
     .lower {
-      fill: #f78c6c;
+      fill: #9da9b4;
     }
   }
 </style>
