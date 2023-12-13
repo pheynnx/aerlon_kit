@@ -1,6 +1,5 @@
 :root {
   --html: #0e1116;
-  --html-gradient: linear-gradient(45deg, #2f2f3d, #232536);
   --font: #fff;
 
   // ThemeToggle
@@ -16,15 +15,14 @@
 
 [data-theme="light"] {
   --html: #ffffff;
-  --html-gradient: linear-gradient(45deg, #e0e0f0, #c8cdff);
   --font: #000;
 
   // ThemeToggle
   --theme-toggle-border: #a6a6a6;
   --theme-toggle-background: #383434;
   --theme-toggle-color-hover: #f78c6c;
-  --theme-toggle-check-background: #fdfdfd;
+  --theme-toggle-check-background: #dbdbdb;
 
   // Navbar
-  --navbar: #f0f0ff;
+  --navbar: #cecee7;
 }

@@ -5,22 +5,30 @@
   export let data: PageData;
 </script>
 
-<h2 class="posts-main-label">Blog</h2>
-<h3 class="posts-label">Featued Posts</h3>
-{#each data.posts as post, _index}
-  {#if post.featured}
-    <Card {post} featured={true}></Card>
-  {/if}
-{/each}
+<div class="main-container">
+  <h2 class="posts-main-label">Blog</h2>
+  <h3 class="posts-label">Featued Posts</h3>
+  {#each data.posts as post, _index}
+    {#if post.featured}
+      <Card {post} featured={true}></Card>
+    {/if}
+  {/each}
 
-<h3 class="posts-label">Latest Posts</h3>
-{#each data.posts as post, _index}
-  {#if !post.featured}
-    <Card {post} featured={false}></Card>
-  {/if}
-{/each}
+  <h3 class="posts-label">Latest Posts</h3>
+  {#each data.posts as post, _index}
+    {#if !post.featured}
+      <Card {post} featured={false}></Card>
+    {/if}
+  {/each}
+</div>
 
 <style lang="scss">
+  .main-container {
+    margin: 0 auto;
+    max-width: 35rem;
+    padding: 0 1rem;
+  }
+
   .posts-main-label {
     font-size: 20px;
   }

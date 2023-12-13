@@ -56,11 +56,11 @@
     position: relative;
     border-radius: 11px;
     display: block;
-    width: 40px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     flex-shrink: 0;
-    border: 1px solid var(--theme-toggle-border);
-    background-color: var(--theme-toggle-background);
+    background-color: transparent;
+    border: transparent;
     transition: border-color 0.25s;
     color: currentColor;
   }
@@ -74,37 +74,37 @@
 
   .check {
     position: absolute;
-    top: 1.2px;
+    top: 1px;
     left: 1px;
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background-color: var(--theme-toggle-check-background);
-    box-shadow:
-      0 1px 2px #0000000a,
-      0 1px 2px #0000000f;
+    // background-color: var(--theme-toggle-check-background);
+    // box-shadow:
+    //   0 1px 2px #0000000a,
+    //   0 1px 2px #0000000f;
     transition: transform 0.25s;
     pointer-events: none;
   }
 
   .check.checked {
-    transform: translate(18px);
+    // transform: translate(18px);
   }
 
   .icon {
     position: relative;
     display: block;
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     overflow: hidden;
   }
 
   .icon :global(svg) {
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 12px;
-    height: 12px;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
   }
 </style>
