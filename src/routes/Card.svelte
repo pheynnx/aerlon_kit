@@ -2,10 +2,12 @@
   import type { Post } from "@prisma/client";
   import dayjs from "dayjs";
 
+  export let featured: boolean;
+
   export let post: Post;
 </script>
 
-<div class="card-container">
+<div class="card-container" class:featured>
   <div class="card-header">
     <a class="card-header-title" href={`/blog/${post.slug}`}>
       <span>{post.title}</span>
@@ -34,6 +36,13 @@
     align-items: center;
     justify-items: center;
     text-align: center;
+    padding: 5px;
+    border-radius: 0.5rem;
+
+    &.featured {
+      background-color: #5e8cff2c;
+      border: 1px solid #5e8cff;
+    }
   }
 
   .card-header {
@@ -59,6 +68,14 @@
   }
 
   .card-snippet {
+    font-size: 14px;
+    margin: 0;
+    padding: 0 2px;
+    line-height: 1.7;
+
+    p {
+      margin: 5px 0;
+    }
   }
 
   .card-categories {
@@ -66,8 +83,19 @@
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
+    margin-bottom: 4px;
   }
 
   .card-category {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    border-radius: 0.25rem;
+    background-color: #795145;
+    border: 1px solid #f78c6c;
+    font-size: 12px;
+    line-height: 1;
+    padding: 4px 7px 5px 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 </style>

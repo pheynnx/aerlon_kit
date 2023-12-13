@@ -53,7 +53,6 @@
 
 <style lang="scss">
   button {
-    margin-right: 15px;
     position: relative;
     border-radius: 11px;
     display: block;

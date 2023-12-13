@@ -5,5 +5,14 @@
 </script>
 
 <Navbar />
+<div class="main-container">
+  <slot />
+</div>
 
-<slot />
+<style lang="scss">
+  .main-container {
+    margin: 0 auto;
+    max-width: 43rem;
+    padding: 0 1rem;
+  }
+</style>
