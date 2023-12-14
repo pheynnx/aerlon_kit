@@ -16,6 +16,7 @@
     "shikiji": "^0.8.7",
     "shikiji-transformers": "^0.8.7",
     "svelte": "^4.2.8",
+    "svelte-adapter-bun": "^0.5.1",
     "svelte-check": "^3.6.2",
     "tslib": "^2.6.2",
     "tsx": "^4.6.2",

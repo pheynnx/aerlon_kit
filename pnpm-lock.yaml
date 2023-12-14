@@ -43,6 +43,9 @@ devDependencies:
   svelte:
     specifier: ^4.2.8
     version: 4.2.8
+  svelte-adapter-bun:
+    specifier: ^0.5.1
+    version: 0.5.1
   svelte-check:
     specifier: ^3.6.2
     version: 3.6.2(sass@1.69.5)(svelte@4.2.8)
@@ -1569,6 +1572,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       min-indent: 1.0.1
+    dev: true
+
+  /svelte-adapter-bun@0.5.1:
+    resolution: {integrity: sha512-eLbkKuoCaZPzVN20dg/oZOUybO16oEQCOQuzAI2jVLU90VbJ1P099bAlA+7H4KPGI2r2sdkfD1MppGAbk7PdMw==}
+    dependencies:
+      tiny-glob: 0.2.9
     dev: true
 
   /svelte-check@3.6.2(sass@1.69.5)(svelte@4.2.8):
