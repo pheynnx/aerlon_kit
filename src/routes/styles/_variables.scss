@@ -30,6 +30,11 @@
   --html: #1b1b1f;
   --font: #fff;
 
+  .shiki,
+  .shiki span {
+    color: var(--theme-dark);
+  }
+
   // ThemeToggle
   --theme-toggle-border: #a6a6a6;
   --theme-toggle-background: #161414;
@@ -53,6 +58,12 @@
 }
 
 [data-theme="light"] {
+  .shiki,
+  .shiki span {
+    color: var(--theme-light);
+    font-weight: 600;
+  }
+
   --html: #ffffff;
   --font: #000;
 

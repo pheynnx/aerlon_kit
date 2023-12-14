@@ -1,7 +1,7 @@
 import type { Post, PrismaClient } from "@prisma/client"
 import { Marked } from "marked";
 import { markedHighlight } from "marked-highlight";
-import { getHighlighter, renderToHtml } from "shiki";
+import { getHighlighter, bundledLanguages } from "shikiji";
 
 type CachePost = {
     metaList: Post[],
@@ -10,25 +10,40 @@ type CachePost = {
 
 let cache: CachePost;
 
-const shi = await getHighlighter({ theme: "material-theme-palenight" })
+const shiki = await getHighlighter({
+    themes: ["material-theme-palenight", "min-light"],
+    langs: [...Object.keys(bundledLanguages)]
+})
 
 const marked = new Marked(
     markedHighlight({
         highlight(code, lang) {
             try {
-                const tokens = shi.codeToThemedTokens(code, lang)
-                const html = renderToHtml(tokens, {
-                    elements: {
-                        pre({ _className, _style, children }) {
-                            return `${children}`
-                        },
-                        code({ _className, _style, children }) {
-                            return `${children}`
-                        },
-                    }
+                const cody = shiki.codeToHtml(code, {
+                    lang,
+                    themes: {
+                        light: "min-light",
+                        dark: 'material-theme-palenight'
+                    },
+                    cssVariablePrefix: "--theme-",
+                    defaultColor: '',
+                    transformers: [
+                        {
+                            pre(hast) {
+                                return {
+                                    type: "element",
+                                    tagName: "pre",
+                                    properties: {
+                                        class: "shiki"
+                                    },
+                                    children: hast.children
+                                }
+                            },
+                        }
+                    ],
                 })
 
-                return html
+                return cody
             } catch (error) {
                 return
             }
@@ -37,7 +52,7 @@ const marked = new Marked(
     {
         renderer: {
             code(code, lang, escaped) {
-                return `<div class="code-block"><span class="language-name">${lang}</span><pre><code class="language-${lang}">${escaped ? code : code}</code></pre></div>`;
+                return `<div class="code-block"><span class="language-name">${lang}</span>${escaped ? code : code}</div>`;
             },
         }
     }
