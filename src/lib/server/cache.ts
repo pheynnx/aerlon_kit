@@ -12,7 +12,6 @@ let cache: CachePost;
 
 const shi = await getHighlighter({ theme: "material-theme-palenight" })
 
-
 const marked = new Marked(
     markedHighlight({
         highlight(code, lang) {
