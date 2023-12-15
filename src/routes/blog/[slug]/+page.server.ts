@@ -9,5 +9,5 @@ export const load: PageServerLoad = async ({ params }) => {
         return { post: cache.postMap[params.slug] };
     }
 
-    throw error(404, 'Not found');
+    error(404, 'Not found');
 };
