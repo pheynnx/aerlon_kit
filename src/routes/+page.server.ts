@@ -7,7 +7,3 @@ export const load: PageServerLoad = async ({ params }) => {
         posts: cache.metaList
     };
 };
-
-export const prerender = false;
-export const ssr = true;
-export const csr = true;

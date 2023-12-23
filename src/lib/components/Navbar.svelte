@@ -11,28 +11,12 @@
 <div class:scrolled class="navigation-container">
   <nav class="navigation">
     <div></div>
-    <div>
-      <a href="/">
-        <svg
-          class="navigation-logo"
-          width="100%"
-          height="100%"
-          viewBox="0 0 210 181"
-          style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-          ><g
-            ><path
-              class="upper"
-              d="M0,180.436l105.174,-180.436l35.46,57.894l-70.679,123.025l-69.955,-0.483"
-            ></path><path
-              class="lower"
-              d="M140.634,57.894l68.749,122.301l-68.508,0.241l-23.881,-42.214l23.64,-80.328Z"
-            ></path><path
-              d="M116.994,138.222l-10.92,-20.072l34.561,-60.255l-23.641,80.327"
-              style="fill:#5a4424;"
-            ></path></g
-          >
-        </svg>
-      </a>
+    <div class="navigation-center">
+      <a class="navigation-logo" href="/"
+        ><span>{`{`}</span><span style="color: #3b8eed;">aerlon</span><span
+          >{`}`}</span
+        ></a
+      >
     </div>
     <div class="navigation-utilities">
       <ThemeToggle />
@@ -63,24 +47,23 @@
     align-content: center;
     align-items: center;
     // max-width: 43rem;
-    padding: 0 1rem;
+    // padding: 0 1rem;
     margin: 0 auto;
+  }
+
+  .navigation-center {
+    margin-top: -5px;
+  }
+
+  .navigation-logo {
+    text-decoration: none;
+    color: var(--logo);
+    font-size: 30px;
+    font-weight: 600;
   }
 
   .navigation-utilities {
     justify-content: end;
     display: grid;
-  }
-
-  .navigation-logo {
-    height: 30px;
-
-    .upper {
-      fill: #42b883;
-    }
-
-    .lower {
-      fill: #9da9b4;
-    }
   }
 </style>

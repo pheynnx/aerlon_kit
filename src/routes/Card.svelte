@@ -45,7 +45,7 @@
       // border: 1px solid #5e8cff;
 
       .card-header-title:hover {
-        color: #42b883;
+        color: #3b8eed;
       }
 
       .card-header-date {
@@ -75,7 +75,7 @@
     padding-bottom: 2px;
 
     &:hover {
-      color: #42b883;
+      color: #3b8eed;
     }
   }
 

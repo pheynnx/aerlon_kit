@@ -9,7 +9,7 @@
 .language-name {
   position: absolute;
   top: 7px;
-  right: 8px;
+  right: 9px;
   z-index: 2;
   font-size: 12px;
   font-weight: 500;
@@ -17,13 +17,11 @@
   line-height: 1;
   font-size: 13px;
   font-weight: 700;
-  &::first-letter {
-    text-transform: lowercase;
-  }
+  text-transform: lowercase;
 }
 
 pre {
-  padding: 20px 0;
+  padding: 22px 0;
   margin: 0;
   overflow: auto;
 }
@@ -33,7 +31,7 @@ code {
   font-size: 14px;
   font-weight: 500;
   padding: 3px 5px;
-  background-color: #42b883;
+  background-color: #3b8eed;
   color: #000;
   border-radius: 0.25rem;
 }
@@ -45,4 +43,10 @@ pre code {
   line-height: 1.5;
   color: #fff;
   background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  pre code {
+    padding: 0px 15px;
+  }
 }
