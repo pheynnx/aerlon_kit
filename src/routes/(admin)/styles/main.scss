@@ -1,0 +1,45 @@
+html {
+  font-family: "Quicksand";
+  color: #fff;
+  background-color: #1b1b1e;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+
+  &:horizontal {
+    height: 4px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+
+  &:vertical {
+    background: #232330;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9c9c9;
+  border-radius: 4px;
+
+  &:hover {
+    background: #9b9b9b;
+  }
+}

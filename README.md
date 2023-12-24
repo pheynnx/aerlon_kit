@@ -1,3 +1,5 @@
-# Aerlon [0.1.1]
+# Aerlon [0.1.2]
 
-### SvelteKit
+### About
+
+This is my personal portfolio and blog website... built in SvelteKit currently.
