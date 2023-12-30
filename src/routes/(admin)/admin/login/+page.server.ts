@@ -20,7 +20,14 @@ export const load: PageServerLoad = ({ cookies }) => {
 };
 
 export const actions = {
-    default: async ({ cookies }) => {
+    default: async ({ cookies, request }) => {
+
+        const data = await request.formData();
+        const pin = data.get("pin");
+        const password = data.get("password");
+
+        console.log("pin", pin);
+        console.log("pass", password);
 
         // check login credentials
 
@@ -35,7 +42,7 @@ export const actions = {
         })
 
         // redirect to /admin
-        redirect(307, '/admin');
+        // redirect(307, '/admin');
 
     },
 } satisfies Actions;
