@@ -10,29 +10,29 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.0.1",
-    "@sveltejs/adapter-node": "^2.0.2",
-    "@sveltejs/kit": "^2.0.6",
-    "@sveltejs/vite-plugin-svelte": "^3.0.1",
-    "@types/node": "^20.10.6",
-    "prisma": "^5.7.1",
+    "@sveltejs/adapter-auto": "^3.1.1",
+    "@sveltejs/adapter-node": "^4.0.1",
+    "@sveltejs/kit": "^2.5.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "@types/node": "^20.11.15",
+    "prisma": "^5.9.1",
     "shikiji": "^0.8.7",
-    "svelte": "^4.2.8",
+    "svelte": "^4.2.9",
     "svelte-adapter-bun": "^0.5.1",
-    "svelte-check": "^3.6.2",
+    "svelte-check": "^3.6.3",
     "tslib": "^2.6.2",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
-    "vite": "^5.0.10"
+    "vite": "^5.0.12"
   },
   "type": "module",
   "dependencies": {
-    "@prisma/client": "^5.7.1",
+    "@prisma/client": "^5.9.1",
     "dayjs": "^1.11.10",
     "jose": "^5.2.0",
-    "marked": "^11.1.1",
+    "marked": "^11.2.0",
     "marked-highlight": "^2.1.0",
-    "sass": "^1.69.6"
+    "sass": "^1.70.0"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

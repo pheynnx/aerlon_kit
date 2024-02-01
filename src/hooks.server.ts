@@ -1,10 +1,14 @@
+import { building } from "$app/environment";
 import { json, type Handle } from '@sveltejs/kit';
 import prisma from "$lib/prisma";
 import { InitCache } from "$lib/server/cache";
 import { DecryptAdminJWE } from '$lib/server/auth/jwt';
 import { VerifyAdminCredentials } from '$lib/server/auth/verify';
 
-await InitCache(prisma)
+if (!building) {
+    await InitCache(prisma)
+}
+
 
 export const handle: Handle = async ({ event, resolve, }) => {
     if (event.url.pathname.startsWith('/api')) {

@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { browser } from "$app/environment";
+
   import ThemeToggle from "./ThemeToggle.svelte";
 
   let scrollHeight: number;
@@ -19,7 +21,9 @@
       >
     </div>
     <div class="navigation-utilities">
-      <ThemeToggle />
+      {#if browser}
+        <ThemeToggle />
+      {/if}
     </div>
   </nav>
 </div>
